@@ -45,24 +45,6 @@ np.random.seed(42)
 x = np.random.rand(N, 1)
 y = true_b + true_w * x + (.1 * np.random.randn(N, 1))
 
-# Shuffles the indices
-idx = np.arange(N)
-np.random.shuffle(idx)
-
-# Uses first 80 random indices for train
-train_idx = idx[:int(N*.8)]
-# Uses the remaining indices for validation
-val_idx = idx[int(N*.8):]
-
-# Generates train and validation sets
-x_train, y_train = x[train_idx], y[train_idx]
-x_val, y_val = x[val_idx], y[val_idx]
-
-
-# Data Preparation
-
-torch.manual_seed(13)
-
 # Builds tensors from numpy arrays BEFORE split
 x_tensor = torch.from_numpy(x).float()
 y_tensor = torch.from_numpy(y).float()
