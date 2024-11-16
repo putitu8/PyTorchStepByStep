@@ -33,7 +33,7 @@ def mini_batch(device, data_loader, step_fn):
         mini_batch_loss = step_fn(x_batch, y_batch)
         mini_batch_losses.append(mini_batch_loss)
         
-    loss = np.mean(mini_batch_losses)
+    loss = np.mean(mini_batch_losses)  
     return loss
 
 # Data Generation
@@ -138,3 +138,5 @@ for epoch in range(n_epochs):
 
 # Closes the writer
 writer.close()
+
+print(model.state_dict())
