@@ -1,5 +1,1 @@
-print("Hello, Test Branch!")
-
-print("Bye, World!")
-
-print("later, I will merge to master branch")
+print("I should be must faster to commit to git since I'm using ssh now")
