@@ -56,7 +56,7 @@ optimizer = optim.SGD(model.parameters(), lr=lr)
 # Defines a MSE loss function
 loss_fn = nn.MSELoss(reduction='mean')
 
-n_epochs = 200
+n_epochs = 100
 
 
 sbs = StepByStep(model, loss_fn, optimizer)
