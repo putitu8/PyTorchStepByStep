@@ -1,3 +1,7 @@
+/rps
+/rps-test-set
+rps.zip
+rps-test-set.zip
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
